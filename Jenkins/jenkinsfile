@@ -28,11 +28,11 @@ node {
         }
         }
   
- /* stage('Sonar - Quality Gate') {
+  stage('Sonar - Quality Gate') {
   	timeout(time: 1, unit: 'MINUTES') {
                 waitForQualityGate abortPipeline: true
             }
-  } */
+  } 
   
    stage('Maven-Package') {
    sh label: '', script: 'mvn package'
